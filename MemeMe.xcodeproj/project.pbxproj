@@ -12,6 +12,7 @@
 		9B0CB4A621A1CE12005BD3DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B0CB4A421A1CE12005BD3DE /* Main.storyboard */; };
 		9B0CB4A821A1CE14005BD3DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B0CB4A721A1CE14005BD3DE /* Assets.xcassets */; };
 		9B0CB4AB21A1CE14005BD3DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B0CB4A921A1CE14005BD3DE /* LaunchScreen.storyboard */; };
+		9B0D52F221AB264600BB023A /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0D52F121AB264600BB023A /* Image.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		9B0CB4A721A1CE14005BD3DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B0CB4AA21A1CE14005BD3DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B0CB4AC21A1CE14005BD3DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B0D52F121AB264600BB023A /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,42 @@
 		9B0CB49F21A1CE12005BD3DE /* MemeMe */ = {
 			isa = PBXGroup;
 			children = (
+				9B0D52F021AB25A300BB023A /* View */,
+				9B0D52EF21AB259900BB023A /* Model */,
+				9B0D52EE21AB257D00BB023A /* Controller */,
 				9B0CB4A021A1CE12005BD3DE /* AppDelegate.swift */,
-				9B0CB4A221A1CE12005BD3DE /* ViewController.swift */,
-				9B0CB4A421A1CE12005BD3DE /* Main.storyboard */,
 				9B0CB4A721A1CE14005BD3DE /* Assets.xcassets */,
 				9B0CB4A921A1CE14005BD3DE /* LaunchScreen.storyboard */,
 				9B0CB4AC21A1CE14005BD3DE /* Info.plist */,
 			);
 			path = MemeMe;
+			sourceTree = "<group>";
+		};
+		9B0D52EE21AB257D00BB023A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			path = ../Controller;
+			sourceTree = "<group>";
+		};
+		9B0D52EF21AB259900BB023A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9B0D52F121AB264600BB023A /* Image.swift */,
+			);
+			name = Model;
+			path = ../Controller/Model;
+			sourceTree = "<group>";
+		};
+		9B0D52F021AB25A300BB023A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9B0CB4A221A1CE12005BD3DE /* ViewController.swift */,
+				9B0CB4A421A1CE12005BD3DE /* Main.storyboard */,
+			);
+			name = View;
+			path = ../Controller/Model/View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B0CB4A321A1CE12005BD3DE /* ViewController.swift in Sources */,
+				9B0D52F221AB264600BB023A /* Image.swift in Sources */,
 				9B0CB4A121A1CE12005BD3DE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +314,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N69DSHPH8W;
 				INFOPLIST_FILE = MemeMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +332,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N69DSHPH8W;
 				INFOPLIST_FILE = MemeMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
