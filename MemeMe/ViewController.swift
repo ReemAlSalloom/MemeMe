@@ -45,8 +45,15 @@ UINavigationControllerDelegate {
     @IBAction func pickAnImage(_ sender: Any) {
          let controller = UIImagePickerController()
         controller.delegate = self
+      //  dismiss(animated: true, completion: nil)
+        
         present(controller, animated: true, completion: nil)
 
+
     }
+  //  func imagePickerControllerDidCancel(_ UIImagePickerController)
+    //{
+      //     dismiss(animated: true, completion: nil)
+    //}
 }
 

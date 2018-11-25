@@ -18,9 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eji-H9-8Ub">
-                                <rect key="frame" x="67" y="169" width="240" height="189"/>
-                            </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JMc-9b-krB">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <items>
@@ -31,17 +28,31 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HLw-XR-P3l">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Item" id="w3R-Wp-SgS"/>
+                                </items>
+                            </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eji-H9-8Ub">
+                                <rect key="frame" x="0.0" y="209" width="375" height="248"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="248" id="sMK-aU-OUJ"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eji-H9-8Ub" secondAttribute="trailing" constant="68" id="1D2-Ns-zWQ"/>
-                            <constraint firstItem="JMc-9b-krB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7nk-5l-Doj"/>
-                            <constraint firstItem="eji-H9-8Ub" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="149" id="9E5-hY-aTm"/>
-                            <constraint firstItem="eji-H9-8Ub" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="JYA-XZ-5WF"/>
-                            <constraint firstItem="JMc-9b-krB" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="cBA-vN-ZdX"/>
-                            <constraint firstItem="JMc-9b-krB" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="moS-eJ-M6B"/>
-                            <constraint firstItem="JMc-9b-krB" firstAttribute="top" secondItem="eji-H9-8Ub" secondAttribute="bottom" constant="265" id="v8W-k4-Dpy"/>
-                            <constraint firstItem="JMc-9b-krB" firstAttribute="top" secondItem="eji-H9-8Ub" secondAttribute="bottom" constant="265" id="yKR-aO-LeI"/>
+                            <constraint firstItem="eji-H9-8Ub" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="CiQ-Ju-qKA"/>
+                            <constraint firstItem="HLw-XR-P3l" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Cwz-hL-AxS"/>
+                            <constraint firstItem="HLw-XR-P3l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DF6-y9-hra"/>
+                            <constraint firstItem="HLw-XR-P3l" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Ir4-0g-s3T"/>
+                            <constraint firstItem="JMc-9b-krB" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="YL6-Wi-3a4"/>
+                            <constraint firstItem="eji-H9-8Ub" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="b3H-2A-6RI"/>
+                            <constraint firstItem="JMc-9b-krB" firstAttribute="top" secondItem="eji-H9-8Ub" secondAttribute="bottom" constant="166" id="crN-iQ-AzR"/>
+                            <constraint firstItem="eji-H9-8Ub" firstAttribute="top" secondItem="HLw-XR-P3l" secondAttribute="bottom" constant="145" id="eKa-p3-dyj"/>
+                            <constraint firstItem="JMc-9b-krB" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="gTv-7L-ldZ"/>
+                            <constraint firstItem="JMc-9b-krB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="w9a-Me-Co3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
